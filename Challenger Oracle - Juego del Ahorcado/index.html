@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Desafio del Ahorcado - Alura </title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="titulo">Juguemos al Ahorcado</h1>
+    </div>
+
+    <div class="botones">
+      <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
+      <span id="error" class="invisible">Ingresar letras, sin caracteres especiales</span>
+      <span id="repetida" class="invisible">La palabra está repetida</span>
+      <span id="agregada" class="invisible">Palabra ingresada!</span> 
+      <input class="text-input" type="text" id="input-nueva-palabra" placeholder="ESCRIBA NUEVA PALABRA">
+      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+      <span id="nueva-palabra" class = palabraSecreta></span>
+    </div>
+    <div id="canvas">
+      <canvas id="ahorcado" height="800px" width="1200px"></canvas>
+    </div>
+
+      <script type="text/javascript" src="JS/canvas.js"></script>
+      <script type="text/javascript" src="JS/ahorcado.js"></script>
+          
+      <div class="footer">
+        <h4> Mabel C. Barera - 2022 </h4>
+      </div>
+  </body>
+</html>
